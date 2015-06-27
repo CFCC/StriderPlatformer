@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="remixHam_data" version="1.3.0" audacityversion="2.0.3" sel0="0.0000000000" sel1="8.1853514739" vpos="256" h="0.0000000000" zoom="62.1435676393" rate="44100.0">
+	<tags>
+		<tag name="TRACKNUMBER" value="4"/>
+		<tag name="TITLE" value="ONAF - 04 - HAM"/>
+		<tag name="YEAR" value="2015"/>
+		<tag name="Band" value="Jonochrome"/>
+		<tag name="Software" value="oftware"/>
+		<tag name="ALBUM" value="One Night at Flumpty&apos;s"/>
+	</tags>
+	<wavetrack name="ONAF2 - 04 - SPAM" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.584893" pan="-0.9">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="357639">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000d65.au" len="262144" min="-0.586622" max="0.450821" rms="0.090808"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000dfd.au" len="95495" min="-0.499232" max="0.456859" rms="0.07164"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="ONAF2 - 04 - SPAM" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.584893" pan="-0.9">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="357639">
+				<waveblock start="0">
+					<simpleblockfile filename="e000000c.au" len="262144" min="-0.535705" max="0.491026" rms="0.091284"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e00008cd.au" len="95495" min="-0.541862" max="0.421886" rms="0.072796"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="ONAF - 04 - HAM" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="0.630957" pan="0.5">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="356366">
+				<waveblock start="0">
+					<simpleblockfile filename="e00000e0.au" len="262144" min="-0.459704" max="0.453239" rms="0.131663"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000f4b.au" len="94222" min="-0.471909" max="0.475114" rms="0.10909"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="ONAF - 04 - HAM" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="0.630957" pan="0.5">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="356366">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000407.au" len="262144" min="-0.472963" max="0.477547" rms="0.131717"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000605.au" len="94222" min="-0.479776" max="0.478239" rms="0.109082"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

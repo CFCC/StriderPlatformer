@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D70D7B8F1B3DA99D00F42592 /* bossFight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D70D7B8E1B3DA99D00F42592 /* bossFight.mp3 */; };
+		D70D7B911B3DC9C900F42592 /* healthBar4.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D70D7B901B3DC9C900F42592 /* healthBar4.atlas */; };
+		D70D7B931B3DE65A00F42592 /* gameComplete.wav in Resources */ = {isa = PBXBuildFile; fileRef = D70D7B921B3DE65A00F42592 /* gameComplete.wav */; };
+		D713FAC21B389B40004F36FC /* thing.wav in Resources */ = {isa = PBXBuildFile; fileRef = D713FAC11B389B40004F36FC /* thing.wav */; };
+		D713FAC41B389C03004F36FC /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = D713FAC31B389C03004F36FC /* jump.wav */; };
+		D713FAC81B399C69004F36FC /* running.wav in Resources */ = {isa = PBXBuildFile; fileRef = D713FAC71B399C69004F36FC /* running.wav */; };
+		D713FACA1B399D7B004F36FC /* musicBox.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D713FAC91B399D7B004F36FC /* musicBox.mp3 */; };
+		D713FACC1B39A018004F36FC /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D713FACB1B39A018004F36FC /* heart.png */; };
+		D733A9341B30ACC000839CB7 /* mountain and clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = D733A9331B30ACC000839CB7 /* mountain and clouds.png */; };
+		D733A9361B30B06B00839CB7 /* cave entrance.png in Resources */ = {isa = PBXBuildFile; fileRef = D733A9351B30B06B00839CB7 /* cave entrance.png */; };
+		D733A9381B31AD3800839CB7 /* crouch.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D733A9371B31AD3800839CB7 /* crouch.atlas */; };
+		D733A93A1B31B1E200839CB7 /* tree.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D733A9391B31B1E200839CB7 /* tree.atlas */; };
+		D733A93C1B31C5BD00839CB7 /* attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D733A93B1B31C5BD00839CB7 /* attack.atlas */; };
+		D733A93E1B31CB7500839CB7 /* Xbox360_Button_A.png in Resources */ = {isa = PBXBuildFile; fileRef = D733A93D1B31CB7500839CB7 /* Xbox360_Button_A.png */; };
+		D733A9401B31CB7900839CB7 /* ButtonIcon-N64-D-Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = D733A93F1B31CB7900839CB7 /* ButtonIcon-N64-D-Pad.png */; };
+		D733A9421B3204FD00839CB7 /* death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D733A9411B3204FD00839CB7 /* death.atlas */; };
+		D746B4311B2F1E480056C4F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D746B4301B2F1E480056C4F5 /* AppDelegate.swift */; };
+		D746B4331B2F1E480056C4F5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D746B4321B2F1E480056C4F5 /* GameScene.sks */; };
+		D746B4351B2F1E480056C4F5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D746B4341B2F1E480056C4F5 /* GameScene.swift */; };
+		D746B4371B2F1E480056C4F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D746B4361B2F1E480056C4F5 /* GameViewController.swift */; };
+		D746B43A1B2F1E480056C4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D746B4381B2F1E480056C4F5 /* Main.storyboard */; };
+		D746B43C1B2F1E480056C4F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D746B43B1B2F1E480056C4F5 /* Images.xcassets */; };
+		D746B43F1B2F1E480056C4F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D746B43D1B2F1E480056C4F5 /* LaunchScreen.xib */; };
+		D746B44B1B2F1E480056C4F5 /* SpriteKitSimpleGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D746B44A1B2F1E480056C4F5 /* SpriteKitSimpleGameTests.swift */; };
+		D746B4611B2F2D370056C4F5 /* strider.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D746B4601B2F2D370056C4F5 /* strider.atlas */; };
+		D746B4631B2F572B0056C4F5 /* standing.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D746B4621B2F572B0056C4F5 /* standing.atlas */; };
+		D75558751B3302AE000438E7 /* airattack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D75558741B3302AE000438E7 /* airattack.atlas */; };
+		D75558771B33119E000438E7 /* kanjideath.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D75558761B33119E000438E7 /* kanjideath.atlas */; };
+		D75558791B3311B0000438E7 /* stouterdeath.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D75558781B3311B0000438E7 /* stouterdeath.atlas */; };
+		D755587B1B3311B6000438E7 /* retrodeath.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D755587A1B3311B6000438E7 /* retrodeath.atlas */; };
+		D75558811B3311BF000438E7 /* retroGuy.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D755587C1B3311BF000438E7 /* retroGuy.atlas */; };
+		D75558821B3311BF000438E7 /* stouter.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D755587D1B3311BF000438E7 /* stouter.atlas */; };
+		D75558831B3311BF000438E7 /* Kanji.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D755587E1B3311BF000438E7 /* Kanji.atlas */; };
+		D75558841B3311BF000438E7 /* purpleDeath.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D755587F1B3311BF000438E7 /* purpleDeath.atlas */; };
+		D75558851B3311BF000438E7 /* purpleGuy.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D75558801B3311BF000438E7 /* purpleGuy.atlas */; };
+		D7670DEB1B345556003008F7 /* striderDeath.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7670DEA1B345556003008F7 /* striderDeath.atlas */; };
+		D7670DED1B345D5A003008F7 /* Pce_gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = D7670DEC1B345D5A003008F7 /* Pce_gameover.png */; };
+		D7ED492D1B39D79000F9D1E0 /* swoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED492C1B39D79000F9D1E0 /* swoosh.wav */; };
+		D7ED492F1B39D80400F9D1E0 /* cutmusicbox.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7ED492E1B39D80400F9D1E0 /* cutmusicbox.mp3 */; };
+		D7ED49311B39DF3600F9D1E0 /* goodEnd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49301B39DF3600F9D1E0 /* goodEnd.mp3 */; };
+		D7ED49331B39E54100F9D1E0 /* kanjiDeath.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49321B39E54000F9D1E0 /* kanjiDeath.wav */; };
+		D7ED49351B39E60300F9D1E0 /* 8bitHurt.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49341B39E60300F9D1E0 /* 8bitHurt.aiff */; };
+		D7ED49371B39E72300F9D1E0 /* treePain.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49361B39E72300F9D1E0 /* treePain.wav */; };
+		D7ED49391B39E80E00F9D1E0 /* stouterPain.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49381B39E80E00F9D1E0 /* stouterPain.wav */; };
+		D7ED493B1B39E8ED00F9D1E0 /* purplePain.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED493A1B39E8ED00F9D1E0 /* purplePain.wav */; };
+		D7ED493D1B39EACF00F9D1E0 /* winMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7ED493C1B39EACF00F9D1E0 /* winMusic.mp3 */; };
+		D7ED493F1B39EB5100F9D1E0 /* striderHurt.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED493E1B39EB5100F9D1E0 /* striderHurt.wav */; };
+		D7ED49471B3B391700F9D1E0 /* remixHam.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49461B3B391700F9D1E0 /* remixHam.wav */; };
+		D7ED494F1B3C4E2800F9D1E0 /* bossStanding.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7ED494E1B3C4E2800F9D1E0 /* bossStanding.atlas */; };
+		D7ED49511B3C70C700F9D1E0 /* bossWalks.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49501B3C70C700F9D1E0 /* bossWalks.atlas */; };
+		D7ED49531B3C711800F9D1E0 /* bossHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49521B3C711800F9D1E0 /* bossHit.atlas */; };
+		D7ED49571B3C734200F9D1E0 /* bossShoot.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49561B3C734200F9D1E0 /* bossShoot.atlas */; };
+		D7ED49591B3C788500F9D1E0 /* fireball.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7ED49581B3C788500F9D1E0 /* fireball.atlas */; };
+		D7ED495D1B3C7E9F00F9D1E0 /* Level2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7ED495C1B3C7E9F00F9D1E0 /* Level2.wav */; };
+		D7ED495F1B3C81C800F9D1E0 /* frie.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7ED495E1B3C81C800F9D1E0 /* frie.atlas */; };
+		D7F98C851B306C53005C3A9E /* jumping.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7F98C841B306C53005C3A9E /* jumping.atlas */; };
+		D7F98C871B30787C005C3A9E /* fall.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D7F98C861B30787C005C3A9E /* fall.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D746B4451B2F1E480056C4F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D746B4231B2F1E470056C4F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D746B42A1B2F1E480056C4F5;
+			remoteInfo = SpriteKitSimpleGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D70D7B8E1B3DA99D00F42592 /* bossFight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bossFight.mp3; sourceTree = "<group>"; };
+		D70D7B901B3DC9C900F42592 /* healthBar4.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = healthBar4.atlas; sourceTree = "<group>"; };
+		D70D7B921B3DE65A00F42592 /* gameComplete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameComplete.wav; sourceTree = "<group>"; };
+		D713FAC11B389B40004F36FC /* thing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thing.wav; sourceTree = "<group>"; };
+		D713FAC31B389C03004F36FC /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		D713FAC71B399C69004F36FC /* running.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = running.wav; sourceTree = "<group>"; };
+		D713FAC91B399D7B004F36FC /* musicBox.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musicBox.mp3; sourceTree = "<group>"; };
+		D713FACB1B39A018004F36FC /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		D733A9331B30ACC000839CB7 /* mountain and clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mountain and clouds.png"; sourceTree = "<group>"; };
+		D733A9351B30B06B00839CB7 /* cave entrance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cave entrance.png"; sourceTree = "<group>"; };
+		D733A9371B31AD3800839CB7 /* crouch.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = crouch.atlas; sourceTree = "<group>"; };
+		D733A9391B31B1E200839CB7 /* tree.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = tree.atlas; sourceTree = "<group>"; };
+		D733A93B1B31C5BD00839CB7 /* attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = attack.atlas; sourceTree = "<group>"; };
+		D733A93D1B31CB7500839CB7 /* Xbox360_Button_A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xbox360_Button_A.png; sourceTree = "<group>"; };
+		D733A93F1B31CB7900839CB7 /* ButtonIcon-N64-D-Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonIcon-N64-D-Pad.png"; sourceTree = "<group>"; };
+		D733A9411B3204FD00839CB7 /* death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = death.atlas; sourceTree = "<group>"; };
+		D746B42B1B2F1E480056C4F5 /* SpriteKitSimpleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitSimpleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D746B42F1B2F1E480056C4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D746B4301B2F1E480056C4F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D746B4321B2F1E480056C4F5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = /Users/Camper/Desktop/SpriteKitSimpleGame/SpriteKitSimpleGame/GameScene.sks; sourceTree = "<absolute>"; };
+		D746B4341B2F1E480056C4F5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D746B4361B2F1E480056C4F5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D746B4391B2F1E480056C4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D746B43B1B2F1E480056C4F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D746B43E1B2F1E480056C4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D746B4441B2F1E480056C4F5 /* SpriteKitSimpleGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitSimpleGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D746B4491B2F1E480056C4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D746B44A1B2F1E480056C4F5 /* SpriteKitSimpleGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitSimpleGameTests.swift; sourceTree = "<group>"; };
+		D746B4601B2F2D370056C4F5 /* strider.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = strider.atlas; sourceTree = "<group>"; };
+		D746B4621B2F572B0056C4F5 /* standing.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = standing.atlas; sourceTree = "<group>"; };
+		D75558741B3302AE000438E7 /* airattack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = airattack.atlas; sourceTree = "<group>"; };
+		D75558761B33119E000438E7 /* kanjideath.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = kanjideath.atlas; sourceTree = "<group>"; };
+		D75558781B3311B0000438E7 /* stouterdeath.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = stouterdeath.atlas; sourceTree = "<group>"; };
+		D755587A1B3311B6000438E7 /* retrodeath.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = retrodeath.atlas; sourceTree = "<group>"; };
+		D755587C1B3311BF000438E7 /* retroGuy.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = retroGuy.atlas; sourceTree = "<group>"; };
+		D755587D1B3311BF000438E7 /* stouter.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = stouter.atlas; sourceTree = "<group>"; };
+		D755587E1B3311BF000438E7 /* Kanji.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Kanji.atlas; sourceTree = "<group>"; };
+		D755587F1B3311BF000438E7 /* purpleDeath.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = purpleDeath.atlas; sourceTree = "<group>"; };
+		D75558801B3311BF000438E7 /* purpleGuy.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = purpleGuy.atlas; sourceTree = "<group>"; };
+		D7670DEA1B345556003008F7 /* striderDeath.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = striderDeath.atlas; sourceTree = "<group>"; };
+		D7670DEC1B345D5A003008F7 /* Pce_gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pce_gameover.png; sourceTree = "<group>"; };
+		D7ED492C1B39D79000F9D1E0 /* swoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swoosh.wav; sourceTree = "<group>"; };
+		D7ED492E1B39D80400F9D1E0 /* cutmusicbox.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cutmusicbox.mp3; sourceTree = "<group>"; };
+		D7ED49301B39DF3600F9D1E0 /* goodEnd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = goodEnd.mp3; sourceTree = "<group>"; };
+		D7ED49321B39E54000F9D1E0 /* kanjiDeath.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kanjiDeath.wav; sourceTree = "<group>"; };
+		D7ED49341B39E60300F9D1E0 /* 8bitHurt.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 8bitHurt.aiff; sourceTree = "<group>"; };
+		D7ED49361B39E72300F9D1E0 /* treePain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = treePain.wav; sourceTree = "<group>"; };
+		D7ED49381B39E80E00F9D1E0 /* stouterPain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = stouterPain.wav; sourceTree = "<group>"; };
+		D7ED493A1B39E8ED00F9D1E0 /* purplePain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = purplePain.wav; sourceTree = "<group>"; };
+		D7ED493C1B39EACF00F9D1E0 /* winMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winMusic.mp3; sourceTree = "<group>"; };
+		D7ED493E1B39EB5100F9D1E0 /* striderHurt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = striderHurt.wav; sourceTree = "<group>"; };
+		D7ED49461B3B391700F9D1E0 /* remixHam.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = remixHam.wav; sourceTree = "<group>"; };
+		D7ED494E1B3C4E2800F9D1E0 /* bossStanding.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossStanding.atlas; sourceTree = "<group>"; };
+		D7ED49501B3C70C700F9D1E0 /* bossWalks.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossWalks.atlas; sourceTree = "<group>"; };
+		D7ED49521B3C711800F9D1E0 /* bossHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossHit.atlas; sourceTree = "<group>"; };
+		D7ED49561B3C734200F9D1E0 /* bossShoot.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossShoot.atlas; sourceTree = "<group>"; };
+		D7ED49581B3C788500F9D1E0 /* fireball.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = fireball.atlas; sourceTree = "<group>"; };
+		D7ED495C1B3C7E9F00F9D1E0 /* Level2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Level2.wav; sourceTree = "<group>"; };
+		D7ED495E1B3C81C800F9D1E0 /* frie.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = frie.atlas; sourceTree = "<group>"; };
+		D7F98C841B306C53005C3A9E /* jumping.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = jumping.atlas; sourceTree = "<group>"; };
+		D7F98C861B30787C005C3A9E /* fall.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = fall.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D746B4281B2F1E480056C4F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D746B4411B2F1E480056C4F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D746B4221B2F1E470056C4F5 = {
+			isa = PBXGroup;
+			children = (
+				D713FAC11B389B40004F36FC /* thing.wav */,
+				D713FAC31B389C03004F36FC /* jump.wav */,
+				D746B42D1B2F1E480056C4F5 /* SpriteKitSimpleGame */,
+				D746B4471B2F1E480056C4F5 /* SpriteKitSimpleGameTests */,
+				D746B42C1B2F1E480056C4F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D746B42C1B2F1E480056C4F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D746B42B1B2F1E480056C4F5 /* SpriteKitSimpleGame.app */,
+				D746B4441B2F1E480056C4F5 /* SpriteKitSimpleGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D746B42D1B2F1E480056C4F5 /* SpriteKitSimpleGame */ = {
+			isa = PBXGroup;
+			children = (
+				D7ED495E1B3C81C800F9D1E0 /* frie.atlas */,
+				D733A9331B30ACC000839CB7 /* mountain and clouds.png */,
+				D733A93F1B31CB7900839CB7 /* ButtonIcon-N64-D-Pad.png */,
+				D70D7B921B3DE65A00F42592 /* gameComplete.wav */,
+				D7ED492E1B39D80400F9D1E0 /* cutmusicbox.mp3 */,
+				D7ED49521B3C711800F9D1E0 /* bossHit.atlas */,
+				D70D7B901B3DC9C900F42592 /* healthBar4.atlas */,
+				D7ED49561B3C734200F9D1E0 /* bossShoot.atlas */,
+				D7ED494E1B3C4E2800F9D1E0 /* bossStanding.atlas */,
+				D7ED49501B3C70C700F9D1E0 /* bossWalks.atlas */,
+				D7ED49581B3C788500F9D1E0 /* fireball.atlas */,
+				D7670DEC1B345D5A003008F7 /* Pce_gameover.png */,
+				D7ED49341B39E60300F9D1E0 /* 8bitHurt.aiff */,
+				D7ED493E1B39EB5100F9D1E0 /* striderHurt.wav */,
+				D7ED495C1B3C7E9F00F9D1E0 /* Level2.wav */,
+				D7ED49321B39E54000F9D1E0 /* kanjiDeath.wav */,
+				D7ED49381B39E80E00F9D1E0 /* stouterPain.wav */,
+				D7ED493C1B39EACF00F9D1E0 /* winMusic.mp3 */,
+				D733A93D1B31CB7500839CB7 /* Xbox360_Button_A.png */,
+				D713FACB1B39A018004F36FC /* heart.png */,
+				D7ED49361B39E72300F9D1E0 /* treePain.wav */,
+				D70D7B8E1B3DA99D00F42592 /* bossFight.mp3 */,
+				D7ED49461B3B391700F9D1E0 /* remixHam.wav */,
+				D7ED493A1B39E8ED00F9D1E0 /* purplePain.wav */,
+				D7ED49301B39DF3600F9D1E0 /* goodEnd.mp3 */,
+				D7ED492C1B39D79000F9D1E0 /* swoosh.wav */,
+				D713FAC91B399D7B004F36FC /* musicBox.mp3 */,
+				D713FAC71B399C69004F36FC /* running.wav */,
+				D733A9351B30B06B00839CB7 /* cave entrance.png */,
+				D733A9411B3204FD00839CB7 /* death.atlas */,
+				D75558741B3302AE000438E7 /* airattack.atlas */,
+				D733A93B1B31C5BD00839CB7 /* attack.atlas */,
+				D755587C1B3311BF000438E7 /* retroGuy.atlas */,
+				D755587D1B3311BF000438E7 /* stouter.atlas */,
+				D755587E1B3311BF000438E7 /* Kanji.atlas */,
+				D755587F1B3311BF000438E7 /* purpleDeath.atlas */,
+				D75558801B3311BF000438E7 /* purpleGuy.atlas */,
+				D755587A1B3311B6000438E7 /* retrodeath.atlas */,
+				D75558781B3311B0000438E7 /* stouterdeath.atlas */,
+				D75558761B33119E000438E7 /* kanjideath.atlas */,
+				D733A9391B31B1E200839CB7 /* tree.atlas */,
+				D733A9371B31AD3800839CB7 /* crouch.atlas */,
+				D7F98C861B30787C005C3A9E /* fall.atlas */,
+				D7F98C841B306C53005C3A9E /* jumping.atlas */,
+				D746B4621B2F572B0056C4F5 /* standing.atlas */,
+				D7670DEA1B345556003008F7 /* striderDeath.atlas */,
+				D746B4601B2F2D370056C4F5 /* strider.atlas */,
+				D746B4301B2F1E480056C4F5 /* AppDelegate.swift */,
+				D746B4321B2F1E480056C4F5 /* GameScene.sks */,
+				D746B4341B2F1E480056C4F5 /* GameScene.swift */,
+				D746B4361B2F1E480056C4F5 /* GameViewController.swift */,
+				D746B4381B2F1E480056C4F5 /* Main.storyboard */,
+				D746B43B1B2F1E480056C4F5 /* Images.xcassets */,
+				D746B43D1B2F1E480056C4F5 /* LaunchScreen.xib */,
+				D746B42E1B2F1E480056C4F5 /* Supporting Files */,
+			);
+			path = SpriteKitSimpleGame;
+			sourceTree = "<group>";
+		};
+		D746B42E1B2F1E480056C4F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D746B42F1B2F1E480056C4F5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D746B4471B2F1E480056C4F5 /* SpriteKitSimpleGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D746B44A1B2F1E480056C4F5 /* SpriteKitSimpleGameTests.swift */,
+				D746B4481B2F1E480056C4F5 /* Supporting Files */,
+			);
+			path = SpriteKitSimpleGameTests;
+			sourceTree = "<group>";
+		};
+		D746B4481B2F1E480056C4F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D746B4491B2F1E480056C4F5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D746B42A1B2F1E480056C4F5 /* SpriteKitSimpleGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D746B44E1B2F1E480056C4F5 /* Build configuration list for PBXNativeTarget "SpriteKitSimpleGame" */;
+			buildPhases = (
+				D746B4271B2F1E480056C4F5 /* Sources */,
+				D746B4281B2F1E480056C4F5 /* Frameworks */,
+				D746B4291B2F1E480056C4F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKitSimpleGame;
+			productName = SpriteKitSimpleGame;
+			productReference = D746B42B1B2F1E480056C4F5 /* SpriteKitSimpleGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D746B4431B2F1E480056C4F5 /* SpriteKitSimpleGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D746B4511B2F1E480056C4F5 /* Build configuration list for PBXNativeTarget "SpriteKitSimpleGameTests" */;
+			buildPhases = (
+				D746B4401B2F1E480056C4F5 /* Sources */,
+				D746B4411B2F1E480056C4F5 /* Frameworks */,
+				D746B4421B2F1E480056C4F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D746B4461B2F1E480056C4F5 /* PBXTargetDependency */,
+			);
+			name = SpriteKitSimpleGameTests;
+			productName = SpriteKitSimpleGameTests;
+			productReference = D746B4441B2F1E480056C4F5 /* SpriteKitSimpleGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D746B4231B2F1E470056C4F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Camper;
+				TargetAttributes = {
+					D746B42A1B2F1E480056C4F5 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = LDXNAB32TA;
+					};
+					D746B4431B2F1E480056C4F5 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = D746B42A1B2F1E480056C4F5;
+					};
+				};
+			};
+			buildConfigurationList = D746B4261B2F1E470056C4F5 /* Build configuration list for PBXProject "SpriteKitSimpleGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D746B4221B2F1E470056C4F5;
+			productRefGroup = D746B42C1B2F1E480056C4F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D746B42A1B2F1E480056C4F5 /* SpriteKitSimpleGame */,
+				D746B4431B2F1E480056C4F5 /* SpriteKitSimpleGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D746B4291B2F1E480056C4F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7ED49331B39E54100F9D1E0 /* kanjiDeath.wav in Resources */,
+				D7F98C851B306C53005C3A9E /* jumping.atlas in Resources */,
+				D70D7B911B3DC9C900F42592 /* healthBar4.atlas in Resources */,
+				D7ED49591B3C788500F9D1E0 /* fireball.atlas in Resources */,
+				D755587B1B3311B6000438E7 /* retrodeath.atlas in Resources */,
+				D713FAC41B389C03004F36FC /* jump.wav in Resources */,
+				D7ED494F1B3C4E2800F9D1E0 /* bossStanding.atlas in Resources */,
+				D75558821B3311BF000438E7 /* stouter.atlas in Resources */,
+				D7ED493D1B39EACF00F9D1E0 /* winMusic.mp3 in Resources */,
+				D75558751B3302AE000438E7 /* airattack.atlas in Resources */,
+				D733A93A1B31B1E200839CB7 /* tree.atlas in Resources */,
+				D733A93C1B31C5BD00839CB7 /* attack.atlas in Resources */,
+				D746B43F1B2F1E480056C4F5 /* LaunchScreen.xib in Resources */,
+				D713FAC21B389B40004F36FC /* thing.wav in Resources */,
+				D733A9421B3204FD00839CB7 /* death.atlas in Resources */,
+				D7ED49351B39E60300F9D1E0 /* 8bitHurt.aiff in Resources */,
+				D733A9381B31AD3800839CB7 /* crouch.atlas in Resources */,
+				D7ED49511B3C70C700F9D1E0 /* bossWalks.atlas in Resources */,
+				D70D7B8F1B3DA99D00F42592 /* bossFight.mp3 in Resources */,
+				D733A9401B31CB7900839CB7 /* ButtonIcon-N64-D-Pad.png in Resources */,
+				D75558841B3311BF000438E7 /* purpleDeath.atlas in Resources */,
+				D75558771B33119E000438E7 /* kanjideath.atlas in Resources */,
+				D746B4631B2F572B0056C4F5 /* standing.atlas in Resources */,
+				D75558851B3311BF000438E7 /* purpleGuy.atlas in Resources */,
+				D7ED49571B3C734200F9D1E0 /* bossShoot.atlas in Resources */,
+				D7ED493B1B39E8ED00F9D1E0 /* purplePain.wav in Resources */,
+				D713FACC1B39A018004F36FC /* heart.png in Resources */,
+				D746B43C1B2F1E480056C4F5 /* Images.xcassets in Resources */,
+				D70D7B931B3DE65A00F42592 /* gameComplete.wav in Resources */,
+				D7F98C871B30787C005C3A9E /* fall.atlas in Resources */,
+				D7ED492F1B39D80400F9D1E0 /* cutmusicbox.mp3 in Resources */,
+				D7ED492D1B39D79000F9D1E0 /* swoosh.wav in Resources */,
+				D713FAC81B399C69004F36FC /* running.wav in Resources */,
+				D75558811B3311BF000438E7 /* retroGuy.atlas in Resources */,
+				D746B4331B2F1E480056C4F5 /* GameScene.sks in Resources */,
+				D713FACA1B399D7B004F36FC /* musicBox.mp3 in Resources */,
+				D746B43A1B2F1E480056C4F5 /* Main.storyboard in Resources */,
+				D733A9361B30B06B00839CB7 /* cave entrance.png in Resources */,
+				D7ED495F1B3C81C800F9D1E0 /* frie.atlas in Resources */,
+				D75558831B3311BF000438E7 /* Kanji.atlas in Resources */,
+				D733A9341B30ACC000839CB7 /* mountain and clouds.png in Resources */,
+				D733A93E1B31CB7500839CB7 /* Xbox360_Button_A.png in Resources */,
+				D7ED49531B3C711800F9D1E0 /* bossHit.atlas in Resources */,
+				D7ED49391B39E80E00F9D1E0 /* stouterPain.wav in Resources */,
+				D746B4611B2F2D370056C4F5 /* strider.atlas in Resources */,
+				D7670DEB1B345556003008F7 /* striderDeath.atlas in Resources */,
+				D7ED49371B39E72300F9D1E0 /* treePain.wav in Resources */,
+				D7ED495D1B3C7E9F00F9D1E0 /* Level2.wav in Resources */,
+				D7ED49471B3B391700F9D1E0 /* remixHam.wav in Resources */,
+				D7ED49311B39DF3600F9D1E0 /* goodEnd.mp3 in Resources */,
+				D75558791B3311B0000438E7 /* stouterdeath.atlas in Resources */,
+				D7ED493F1B39EB5100F9D1E0 /* striderHurt.wav in Resources */,
+				D7670DED1B345D5A003008F7 /* Pce_gameover.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D746B4421B2F1E480056C4F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D746B4271B2F1E480056C4F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D746B4351B2F1E480056C4F5 /* GameScene.swift in Sources */,
+				D746B4371B2F1E480056C4F5 /* GameViewController.swift in Sources */,
+				D746B4311B2F1E480056C4F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D746B4401B2F1E480056C4F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D746B44B1B2F1E480056C4F5 /* SpriteKitSimpleGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D746B4461B2F1E480056C4F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D746B42A1B2F1E480056C4F5 /* SpriteKitSimpleGame */;
+			targetProxy = D746B4451B2F1E480056C4F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D746B4381B2F1E480056C4F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D746B4391B2F1E480056C4F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D746B43D1B2F1E480056C4F5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D746B43E1B2F1E480056C4F5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D746B44C1B2F1E480056C4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D746B44D1B2F1E480056C4F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D746B44F1B2F1E480056C4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SpriteKitSimpleGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D746B4501B2F1E480056C4F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SpriteKitSimpleGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D746B4521B2F1E480056C4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpriteKitSimpleGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpriteKitSimpleGame.app/SpriteKitSimpleGame";
+			};
+			name = Debug;
+		};
+		D746B4531B2F1E480056C4F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpriteKitSimpleGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpriteKitSimpleGame.app/SpriteKitSimpleGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D746B4261B2F1E470056C4F5 /* Build configuration list for PBXProject "SpriteKitSimpleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D746B44C1B2F1E480056C4F5 /* Debug */,
+				D746B44D1B2F1E480056C4F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D746B44E1B2F1E480056C4F5 /* Build configuration list for PBXNativeTarget "SpriteKitSimpleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D746B44F1B2F1E480056C4F5 /* Debug */,
+				D746B4501B2F1E480056C4F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D746B4511B2F1E480056C4F5 /* Build configuration list for PBXNativeTarget "SpriteKitSimpleGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D746B4521B2F1E480056C4F5 /* Debug */,
+				D746B4531B2F1E480056C4F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D746B4231B2F1E470056C4F5 /* Project object */;
+}
